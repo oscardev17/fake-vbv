@@ -1,0 +1,225 @@
+/* Importer la police de caractères */
+
+@font-face {
+    font-family: 'generic-light';
+    src: url('generic-light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'generic-heavy';
+    src: url('generic-heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'generic-regular';
+    src: url('generic-regular.ttf') format('truetype');
+}
+
+body {
+    font-family: '', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 75px;
+}
+
+.success-message {
+    text-align: center;
+    padding: 0.1px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.success-message.pending {
+    background-color: #ffa500;
+    color: white;
+}
+
+.success-message.success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.return-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    border: 1.5px solid #6f6f6fbe;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-button img.return-icon {
+    margin-right: 10px; 
+    height: 24px;
+}
+
+.return-button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+
+.transaction-details {
+    margin: 20px auto; 
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    text-align: center; 
+    max-width: 240px; 
+    display: block;
+}
+
+.auth-instructions {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #dddddd00;
+    text-align: center;
+}
+
+.pay3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.auth-instructions h2 {
+    margin-top: 0;
+    font-size: 19px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.transaction-details .left-content {
+    float: left; 
+    width: 50%; 
+    text-align: left; 
+}
+
+.transaction-details .right-content {
+    float: right; 
+    width: 50%; 
+    text-align: right;
+}
+
+.pay, .pay2 {
+    margin: 0;
+}
+
+.pay {
+    color: #727272;
+    font-size: 0.8rem; 
+}
+
+.pay2 {
+    font-size: 0.8rem;
+}
+
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-container img {
+    max-width: 70%;
+}
+
+.auth-instructions {
+    margin-top: 20px;
+    background-color: #ff000000;
+    padding: 15px;
+    border-radius: 8px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.auth-instructions ol {
+    counter-reset: list-counter;
+    list-style: none;
+    padding-left: 0;
+}
+
+.auth-instructions ol li {
+    counter-increment: list-counter;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.auth-instructions ol li::before {
+    content: counter(list-counter);
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: normal; 
+    left: 1.7vh;
+}
+
+.transaction-details {
+    margin-top: 20px;
+    background-color: #ffffff00;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1.5px solid #000000; 
+    text-align: center; 
+}
+
+.transaction-details h1,
+.transaction-details p,
+.transaction-details button {
+    margin: 0; 
+    padding: 0; 
+}
+
+.transaction-details p {
+    margin-top: 13px; 
+}
+
+.transaction-details button {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
